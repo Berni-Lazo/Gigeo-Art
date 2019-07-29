@@ -1,0 +1,149 @@
+.header {
+  position: relative;
+  min-height: 600px;
+
+  &__img {
+    width: 100%
+  }
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  width: 100vw;
+  background-color: white;
+  box-sizing: border-box;
+  position: absolute;
+
+
+  &__logo {
+    h2 {
+    font-size: 4em;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+
+  &__icon {
+    font-size: 4em;
+    padding: 0 1em;
+
+    &--hidden {
+        display: none;
+    }
+  }
+}
+
+.lower {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $raleway;
+  padding: 2em;
+
+  &__image {
+    width: 9em;
+    height: 9em;
+    border-radius: 50%;
+    }
+
+  &__text {
+    margin-left: 1em;
+  }
+  &__title {
+    font-size: 3em;
+  }
+
+  &__subtitle {
+    font-size: 2em;
+    color: gray;
+  }
+}
+
+.lower__buttons {
+  display: none;
+}
+
+@media (min-width: 992px) {
+
+.nav__icon {
+  font-size: 2em;
+  padding: 0 1em;
+
+    &--hidden {
+      font-size: 2em;
+      padding: 0 1em;
+      display: block;
+      }
+  }
+
+.lower {
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding: 1em;
+      z-index: 2;
+    }
+
+    &__button {
+      background-color: #5DADE2;
+      color: white;
+      text-decoration: none;
+      padding: .5em 1.5em;
+      font-family: $raleway;
+      font-size: 1.5em;
+
+      &--red {
+        background-color: tomato;
+        color: white;
+        text-decoration: none;
+        padding: .5em 1.5em;
+        font-family: $raleway;
+        font-size: 1.5em;
+        margin-left: .5em;
+      }
+    }
+  }
+
+.profile {
+    font-family: $raleway;
+
+    &__image {
+      width: 4em;
+      height: 4em;
+      }
+
+    &__text {
+      margin-left: 1.5em;
+      }
+
+    &__title {
+      font-size: 1.5em;
+      margin: 0;
+      }
+
+    &__subtitle {
+      font-size: 1em;
+      margin: 0;
+      }
+
+  }
+}
