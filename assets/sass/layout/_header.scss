@@ -19,8 +19,16 @@
 
 
   &__logo {
-    h2 {
-    font-size: 4em;
+    display: flex;
+    font-family: 'Comfortaa', cursive;
+
+    h1 {
+      font-weight: 600;
+      font-size: 4em;
+    }
+
+    h3 {
+      font-weight: 400;
     }
   }
 }

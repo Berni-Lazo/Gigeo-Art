@@ -100,8 +100,16 @@
   box-sizing: border-box;
   position: absolute;
 }
-.upper__logo h2 {
+.upper__logo {
+  display: flex;
+  font-family: "Comfortaa", cursive;
+}
+.upper__logo h1 {
+  font-weight: 600;
   font-size: 4em;
+}
+.upper__logo h3 {
+  font-weight: 400;
 }
 
 .nav {
@@ -216,6 +224,7 @@
 .main__title {
   text-align: center;
   font-size: 4em;
+  font-weight: 400;
 }
 
 .container {
